@@ -1,0 +1,213 @@
+/* ==============================
+   BODY
+============================== */
+body {
+  background-color: #010103;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  padding-top: 80px;
+  margin: 0;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+  background-color: #010103; 
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar-brand span {
+  color: #d3ad7f;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #d3ad7f !important;
+}
+
+/* LOGO */
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d3ad7f;
+}
+
+/* ==============================
+   WELCOME SECTION
+============================== */
+.welcome-section {
+  background: linear-gradient(135deg, #1a1a1a, #010103);
+  border-radius: 15px;
+  padding: 60px 30px;
+  margin-bottom: 60px;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome-section h1 span {
+  color: #d3ad7f;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.btn-coffee {
+  background-color: #d3ad7f;
+  color: #010103;
+  border: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-coffee:hover {
+  background-color: #fff;
+  color: #d3ad7f;
+}
+
+/* Optional Coffee Steam Animation */
+.steam {
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: linear-gradient(to top, rgba(255,255,255,0.3), transparent);
+  left: 50%;
+  bottom: 100px;
+  animation: rise 2s infinite;
+}
+
+@keyframes rise {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.4; }
+  50% { transform: translateY(-30px) scaleX(1.2); opacity: 0.7; }
+  100% { transform: translateY(-60px) scaleX(1); opacity: 0; }
+}
+
+/* ==============================
+   MENU TITLE
+============================== */
+.menu-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.menu-title span {
+  color: #d3ad7f;
+}
+
+/* ==============================
+   MENU CARD
+============================== */
+.menu-card {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: #d3ad7f;
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d3ad7f;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.menu-card h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+.footer {
+  background: #010103;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer small {
+  color: #ccc;
+}
+
+/* ==============================
+   MODAL STYLING
+============================== */
+.modal-content {
+  background-color: #010103;
+  color: #fff;
+  border: 1px solid #d3ad7f;
+  border-radius: 10px;
+}
+
+.modal-header, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: #d3ad7f;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.modal-body img {
+  max-height: 200px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 992px) {
+  .welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .welcome-section img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .menu-title {
+    font-size: 2.5rem;
+  }
+
+  .welcome-section h1 {
+    font-size: 2rem;
+  }
+}
